@@ -1,0 +1,173 @@
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Black background */
+  color: white;
+}
+
+/* Hero Section */
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #9ca3af; /* Light gray text */
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Section Layout */
+.section-container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #000000; /* Black background for each section */
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 10rem; /* Tailwind w-40 */
+  height: 10rem; /* Tailwind h-40 */
+  border-radius: 10px; /* Tailwind rounded-full */
+  margin-bottom: 1.5rem; /* Tailwind mb-6 */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px; /* Tailwind shadow-md */
+}
+
+.profile-image-md {
+  margin-bottom: 0; /* Tailwind mb-0 */
+  margin-right: 2.5rem; /* Tailwind md:mr-10 */
+}
+
+
+/* Skill Card */
+.skill-card {
+  background-color: #000000;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px;
+  transition: transform 0.2s ease;
+}
+.skill-title {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+}
+.skill-category li:hover {
+  transform: translateX(5px);
+  transition: all 0.2s ease;
+}
+
+
+/* Project Card */
+.project-card {
+  background-color: #1f2937; /* Dark background */
+  padding: 1.5rem; /* Tailwind p-6 */
+  border-radius: 0.375rem; /* Tailwind rounded-lg */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px; /* Tailwind shadow */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+/* Project Card Hover Effect */
+.project-card:hover {
+  background-color: white; /* Change background to white on hover */
+  color: #1f2937; /* Change text color to dark */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px; /* Slightly stronger shadow on hover */
+}
+
+.project-card:hover .project-title,
+.project-card:hover .project-description,
+.project-card:hover .project-tag {
+  color: #1f2937; /* Change text to dark on hover */
+}
+
+.project-card:hover img {
+  transform: scale(1.05); /* Slightly scale up the image on hover */
+}
+
+/* Transition Effects */
+.project-card a {
+  display: block; /* Make sure the entire card is clickable */
+  transition: all 0.3s ease; /* Smooth transition for all anchor properties */
+}
+
+/* Other Project Card Styles (unchanged) */
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: #4B5563; /* Gray description text */
+  margin-bottom: 0.75rem;
+}
+
+.project-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+/* Input Fields */
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #4b5563; /* Tailwind gray-600 */
+  border-radius: 0.375rem;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: rgba(29, 78, 216, 0.2) 0px 0px 0px 2px;
+}
+
+/* Social Links */
+.social-link {
+  color: #d1d5db; /* Tailwind gray-300 */
+}
+
+.social-link:hover {
+  color: #3b82f6; /* Tailwind blue-500 */
+}
+
+
+
+

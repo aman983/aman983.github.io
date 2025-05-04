@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aman Portfolio</title>
+
+  <!-- TailwindCSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+<body class="bg-black text-white">
+
+  <!-- Hero Section -->
+  <section id="home" class="text-center py-20 bg-black" data-aos="fade-up">
+    <h1 class="hero-title text-4xl md:text-6xl font-bold mb-4">👋 Hi, I'm Aman</h1>
+<p class="hero-subtitle text-lg md:text-xl text-gray-400 mb-6">Embedded Systems Developer | Researcher | Hardware Hacker</p>
+<a href="#projects" class="cta-button bg-teal-600 hover:bg-teal-700 px-6 py-3 rounded-full text-white transition duration-300">View My Work</a>
+
+  </section>
+
+<!-- About Section -->
+<section id="about" class="section-container bg-black pl-6" data-aos="fade-up">
+    <div class="flex flex-col md:flex-row items-center">
+      <img src="Assets/Profile.jpeg" alt="Profile" class="profile-image">
+      
+
+      <div class="md:ml-8"> <!-- Add margin left for spacing -->
+      
+        <h2 class="section-title text-white">Whoami:</h2>
+        <p class="section-text text-gray-300 mb-7"> <!-- Add margin bottom -->
+          I build systems that live close to the metal. From blinking LEDs on a breadboard to architecting real-time firmware with Zephyr RTOS, I'm obsessed with creating reliable and efficient embedded solutions.
+        </p>
+        
+        <p class="section-text text-gray-300">
+          <a href="Assets/Resume.pdf" class="cta-button bg-teal-600 hover:bg-teal-700 mt-4">Download Resume</a>
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+<!-- Skills Section -->
+<section id="skills" class="section-container bg-black px-4 py-16" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-white mb-12">Skills</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card Template -->
+      <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex items-start space-x-4">
+        <i data-lucide="cpu" class="text-teal-400 w-6 h-6 mt-1"></i>
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1">MCUs</h3>
+          <ul class="text-gray-300 list-disc list-inside space-y-1 text-sm">
+            <li><span class="font-medium">STM32</span></li>
+            <li><span class="font-medium">ESP32</span></li>
+            <li><span class="font-medium">Atmega32</span></li>
+            <li><span class="font-medium">Atmega328p</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex items-start space-x-4">
+        <i data-lucide="code" class="text-teal-400 w-6 h-6 mt-1"></i>
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1">Programming Languages</h3>
+          <ul class="text-gray-300 list-disc list-inside space-y-1 text-sm">
+            <li>Embedded C</li>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Rust</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex items-start space-x-4">
+        <i data-lucide="activity" class="text-teal-400 w-6 h-6 mt-1"></i>
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1">RTOS</h3>
+          <ul class="text-gray-300 list-disc list-inside space-y-1 text-sm">
+            <li>FreeRTOS</li>
+            <li>State Machines</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex items-start space-x-4">
+        <i data-lucide="waves" class="text-teal-400 w-6 h-6 mt-1"></i>
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1">Communication Protocols</h3>
+          <ul class="text-gray-300 list-disc list-inside space-y-1 text-sm">
+            <li>UART</li>
+            <li>I2C</li>
+            <li>SPI</li>
+            <li>Bit Banging</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex items-start space-x-4">
+        <i data-lucide="wrench" class="text-teal-400 w-6 h-6 mt-1"></i>
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1">Tools</h3>
+          <ul class="text-gray-300 list-disc list-inside space-y-1 text-sm">
+            <li>KiCad</li>
+            <li>Linux</li>
+            <li>STM32CubeMX</li>
+            <li>PlatformIO</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1 flex items-start space-x-4">
+        <i data-lucide="layers" class="text-teal-400 w-6 h-6 mt-1"></i>
+        <div>
+          <h3 class="text-xl font-bold text-white mb-1">IOT</h3>
+          <ul class="text-gray-300 list-disc list-inside space-y-1 text-sm">
+            <li>WLAN</li>
+            <li>BLE</li>
+            <li>MQTT</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Research Publications Section -->
+<section id="publications" class="section-container bg-black px-4 py-16" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="section-title text-center text-white mb-12">Research Publications</h2>
+
+    <div class="space-y-8">
+      <!-- Publication 1 -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold text-white mb-2">Incorporating LoRa Based Wireless Sensor Network and Machine Learning Technologies to Improve Precision Agriculture</h3>
+        <p class="text-gray-300 text-sm mb-2">
+          <strong> Published in</strong> <em>[Springer] Advances in Intelligent Systems for Sustainable Agriculture</em>, 2025
+        </p>
+        <a href="https://link.springer.com/chapter/10.1007/978-981-99-8289-9_41" target="_blank"
+        class="inline-flex items-center mt-2 bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium py-2 px-4 rounded-full transition duration-300">
+       <i data-lucide="book-open" class="w-4 h-4 mr-2"></i> Click to Read Full Paper
+     </a>
+      </div>
+
+      <!-- Publication 2 -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold text-white mb-2">An Intelligent LoRa-Based Wireless Sensor Network Mesh Architecture to Improve Precision Agriculture</h3>
+        <p class="text-gray-300 text-sm mb-2">
+          <strong> Published in</strong> <em>[Springer] Innovations in Electrical and Electronic Engineering</em>, 2024
+        </p>
+        <a href="https://link.springer.com/chapter/10.1007/978-981-99-8289-9_41" target="_blank"
+           class="inline-flex items-center mt-2 bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium py-2 px-4 rounded-full transition duration-300">
+          <i data-lucide="book-open" class="w-4 h-4 mr-2"></i> Click to Read Full Paper
+        </a>
+      </div>
+
+      <!-- Publication 3 -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold text-white mb-2">Decision Tree-Based Electricity Optimization Using Intelligent Appliance Controller</h3>
+        <p class="text-gray-300 text-sm mb-2">
+          <strong> Published in</strong> <em>[Springer] Artificial Intelligence: Theory and Applications</em>, 2024
+        </p>
+        <a href="https://link.springer.com/chapter/10.1007/978-981-99-8476-3_29" target="_blank"
+           class="inline-flex items-center mt-2 bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium py-2 px-4 rounded-full transition duration-300">
+          <i data-lucide="book-open" class="w-4 h-4 mr-2"></i> Click to Read Full Paper
+        </a>
+      </div>
+
+      <!-- Publication 4 -->
+      <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition transform hover:-translate-y-1">
+        <h3 class="text-xl font-semibold text-white mb-2">An Enhanced Intelligent Algorithm on Fault Location System</h3>
+        <p class="text-gray-300 text-sm mb-2">
+          <strong> Published in</strong> <em>[IEEE] International Conference on Emerging Smart Computing and Informatics (ESCI)</em>, 2023
+        </p>
+        <a href="https://ieeexplore.ieee.org/document/10099804" target="_blank"
+           class="inline-flex items-center mt-2 bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium py-2 px-4 rounded-full transition duration-300">
+          <i data-lucide="book-open" class="w-4 h-4 mr-2"></i> Click to Read Full Paper
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- Projects Section -->
+  <section id="projects" class="section-container bg-black" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="section-title text-center text-white mb-12">Projects</h2>
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        
+      <!-- Project Card 1 -->
+      <div class="project-card transform hover:scale-105 transition duration-300 bg-gray-900 p-4 rounded-lg shadow-md">
+    <a href="https://github.com/aman983/ESP-01S_Relay_Module" target="_blank" class="block">
+      <img src="Assets/prj1.avif" alt="Project 1" class="rounded-md mb-4">
+      <h3 class="project-title text-white">Compact WiFi Relay Module</h3>
+      <p class="project-description text-gray-300">Wireless Relay control switch for Home automation Projects</p>
+      <span class="project-tag bg-yellow-600 text-yellow-100">PCB Design</span>
+      <span class="project-tag bg-blue-600 text-blue-100">ESP 01</span>
+      <span class="project-tag bg-green-600 text-green-100">IoT</span>
+      <span class="project-tag bg-gray-600 text-gray-100">Automation</span>
+    </a>
+  </div>
+  
+  <!-- Project Card 2 -->
+  <div class="project-card transform hover:scale-105 transition duration-300 bg-gray-900 p-4 rounded-lg shadow-md">
+    <a href="https://github.com/aman983/Atmega32_BareMetal" target="_blank" class="block">
+      <img src="Assets/tm1637result.gif" alt="Project 2" class="rounded-md mb-4">
+      <h3 class="project-title text-white">Atmega32 HAL(Hardware Abstraction Layer)</h3>
+      <p class="project-description text-gray-300">Making a HAL for making baremetal development on Atmega32 fast and reliable</p>
+      <span class="project-tag bg-blue-600 text-blue-100">Sensors</span>
+      <span class="project-tag bg-yellow-600 text-yellow-100">Display</span>
+      <span class="project-tag bg-green-600 text-green-100">I2C</span>
+      <span class="project-tag bg-green-600 text-green-100">SPI</span>
+      <span class="project-tag bg-green-600 text-green-100">Bit Banging</span>
+      <span class="project-tag bg-gray-600 text-gray-100">Makefile</span>
+    </a>
+  </div>
+  
+  <!-- Project Card 4 -->
+  <div class="project-card transform hover:scale-105 transition duration-300 bg-gray-900 p-4 rounded-lg shadow-md">
+    <a href="https://github.com/aman983/ICP_DAS_PLC_PYTHON_SDK" target="_blank" class="block">
+      <img src="Assets/ICP_DAS.gif" alt="Project 3" class="rounded-md mb-4">
+      <h3 class="project-title text-white">Hacking a PLC (Programmable Logic controller)</h3>
+      <p class="project-description text-gray-300">Designed and fabricated a custom PCB with STM32 microcontroller.</p>
+      <span class="project-tag bg-blue-600 text-blue-100">Reverse Engineering</span>
+      <span class="project-tag bg-green-600 text-green-100">Python Sockets</span>
+      <span class="project-tag bg-gray-600 text-gray-100">Automation</span>
+    </a>
+  </div>
+  
+  <!-- Project Card 3 -->
+  <div class="project-card transform hover:scale-105 transition duration-300 bg-gray-900 p-4 rounded-lg shadow-md">
+    <a href="https://github.com/aman983/ESP8266-16-channel-relay-development-board?tab=readme-ov-file" target="_blank" class="block">
+      <img src="Assets/16front.png" alt="Project 3" class="rounded-md mb-4">
+      <h3 class="project-title text-white">Custom PCB for ESP8266 for centeralized Home Automation</h3>
+      <p class="project-description text-gray-300">Designed a custom PCB with ESP8266 microcontroller for Home Automation.</p>
+      <span class="project-tag bg-yellow-600 text-yellow-100">PCB Design</span>
+      <span class="project-tag bg-gray-600 text-gray-100">Automation</span>
+    </a>
+  </div>
+  
+    
+    
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-container bg-black" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="section-title text-white mb-8">Contact Me</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" class="space-y-6">
+        <input type="text" name="name" placeholder="Name" class="input-field" required>
+        <input type="email" name="email" placeholder="Email" class="input-field" required>
+        <textarea name="message" placeholder="Your Message" rows="5" class="input-field" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+
+      <div class="mt-8">
+        <p class="text-gray-300">Or reach me directly at <a href="mailto:amanshaikh.it@gmail.com" class="text-blue-400 hover:underline">amanshaikh.it@gmail.com</a></p>
+        <div class="flex justify-center space-x-6 mt-4">
+          <a href="https://www.linkedin.com/in/aman-shaikh-ese/" target="_blank" class="social-link text-gray-400 hover:text-blue-400">LinkedIn</a>
+          <a href="https://github.com/aman983" target="_blank" class="social-link text-gray-400 hover:text-blue-400">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 200,
+    });
+  </script>
+  
+  <script>
+    lucide.createIcons();
+  </script>
+  
+
+
+</body>
+</html>

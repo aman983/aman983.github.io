@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <header class="bg-black text-white shadow-md fixed top-0 w-full z-50">
+  <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    <a href="#home" class="text-xl font-bold">$cd Home</a>
+    <div class="space-x-4 hidden md:block">
+      <a href="#about" class="hover:text-teal-400">About</a>
+      <a href="#skills" class="hover:text-teal-400">Skills</a>
+      <a href="#projects" class="hover:text-teal-400">Projects</a>
+      <a href="#publications" class="hover:text-teal-400">Publications</a>
+      <a href="#contact" class="hover:text-teal-400">Contact</a>
+    </div>
+  </nav>
+</header>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -30,7 +43,7 @@
 <!-- About Section -->
 <section id="about" class="section-container bg-black pl-6" data-aos="fade-up">
     <div class="flex flex-col md:flex-row items-center">
-      <img src="Assets/Profile.jpeg" alt="Profile" class="profile-image">
+      <img src="Assets/Profile.jpeg" alt="Profile" class="profile-image w-40 h-40 rounded-full object-cover mx-auto md:mx-0">
       
 
       <div class="md:ml-8"> <!-- Add margin left for spacing -->
@@ -63,8 +76,10 @@
           <ul class="text-gray-300 list-disc list-inside space-y-1 text-sm">
             <li><span class="font-medium">STM32</span></li>
             <li><span class="font-medium">ESP32</span></li>
+            <li><span class="font-medium">ESP8266</span></li>
             <li><span class="font-medium">Atmega32</span></li>
-            <li><span class="font-medium">Atmega328p</span></li>
+            <li><span class="font-medium">8051</span></li>
+            <li><span class="font-medium">Attiny13a</span></li>
           </ul>
         </div>
       </div>
@@ -125,7 +140,7 @@
         <div>
           <h3 class="text-xl font-bold text-white mb-1">IOT</h3>
           <ul class="text-gray-300 list-disc list-inside space-y-1 text-sm">
-            <li>WLAN</li>
+            <li>WiFi</li>
             <li>BLE</li>
             <li>MQTT</li>
           </ul>
@@ -200,19 +215,20 @@
       <h2 class="section-title text-center text-white mb-12">Projects</h2>
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         
-      <!-- Project Card 1 -->
-      <div class="project-card transform hover:scale-105 transition duration-300 bg-gray-900 p-4 rounded-lg shadow-md">
-    <a href="https://github.com/aman983/ESP-01S_Relay_Module" target="_blank" class="block">
-      <img src="Assets/prj1.avif" alt="Project 1" class="rounded-md mb-4">
-      <h3 class="project-title text-white">Compact WiFi Relay Module</h3>
-      <p class="project-description text-gray-300">Wireless Relay control switch for Home automation Projects</p>
-      <span class="project-tag bg-yellow-600 text-yellow-100">PCB Design</span>
-      <span class="project-tag bg-blue-600 text-blue-100">ESP 01</span>
-      <span class="project-tag bg-green-600 text-green-100">IoT</span>
-      <span class="project-tag bg-gray-600 text-gray-100">Automation</span>
+    <!-- Project Card 2 -->
+  <div class="project-card transform hover:scale-105 transition duration-300 bg-gray-900 p-4 rounded-lg shadow-md">
+    <a href="https://github.com/aman983/8051_HAL/tree/main/Scheduler" target="_blank" class="block">
+      <img src="Assets/GPIO_Blinky.gif" alt="Project 2" class="rounded-md mb-4">
+      <h3 class="project-title text-white">Simple Task Scheduler 8051</h3>
+      <p class="project-description text-gray-300">Making a simple baremetal Scheduler for running multiple tasks in parallel even on 8051</p>
+      <span class="project-tag bg-yellow-600 text-yellow-100">8051</span>
+      <span class="project-tag bg-green-600 text-green-100">BitBanging</span>
+      <span class="project-tag bg-green-600 text-green-100">Timers</span>
+      <span class="project-tag bg-green-600 text-green-100">Scheduling</span>
+      <span class="project-tag bg-gray-600 text-gray-100">Makefile</span>
     </a>
   </div>
-  
+
   <!-- Project Card 2 -->
   <div class="project-card transform hover:scale-105 transition duration-300 bg-gray-900 p-4 rounded-lg shadow-md">
     <a href="https://github.com/aman983/Atmega32_HAL" target="_blank" class="block">
@@ -225,6 +241,19 @@
       <span class="project-tag bg-green-600 text-green-100">SPI</span>
       <span class="project-tag bg-green-600 text-green-100">Bit Banging</span>
       <span class="project-tag bg-gray-600 text-gray-100">Makefile</span>
+    </a>
+  </div>
+
+     <!-- Project Card 1 -->
+      <div class="project-card transform hover:scale-105 transition duration-300 bg-gray-900 p-4 rounded-lg shadow-md">
+    <a href="https://github.com/aman983/ESP-01S_Relay_Module" target="_blank" class="block">
+      <img src="Assets/prj1.avif" alt="Project 1" class="rounded-md mb-4">
+      <h3 class="project-title text-white">Compact WiFi Relay Module</h3>
+      <p class="project-description text-gray-300">Wireless Relay control switch for Home automation Projects</p>
+      <span class="project-tag bg-yellow-600 text-yellow-100">PCB Design</span>
+      <span class="project-tag bg-blue-600 text-blue-100">ESP 01</span>
+      <span class="project-tag bg-green-600 text-green-100">IoT</span>
+      <span class="project-tag bg-gray-600 text-gray-100">Automation</span>
     </a>
   </div>
   
@@ -240,7 +269,6 @@
     </a>
   </div>
   
-  <!-- Project Card 3 -->
   <div class="project-card transform hover:scale-105 transition duration-300 bg-gray-900 p-4 rounded-lg shadow-md">
     <a href="https://github.com/aman983/ESP8266-16-channel-relay-development-board?tab=readme-ov-file" target="_blank" class="block">
       <img src="Assets/16front.png" alt="Project 3" class="rounded-md mb-4">
@@ -262,7 +290,7 @@
   <section id="contact" class="section-container bg-black" data-aos="fade-up">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="section-title text-white mb-8">Contact Me</h2>
-      <form action="https://formspree.io/f/yourFormID" method="POST" class="space-y-6">
+      <form action="https://formspree.io/f/xqaqngby" method="POST" class="space-y-6">
         <input type="text" name="name" placeholder="Name" class="input-field" required>
         <input type="email" name="email" placeholder="Email" class="input-field" required>
         <textarea name="message" placeholder="Your Message" rows="5" class="input-field" required></textarea>
